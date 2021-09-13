@@ -84,66 +84,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/User/Desktop/C++/my_project/function_1.cpp">
-			<Option target="MyProject"/>
-		</Unit>
-		<Unit filename="C:/Users/User/Desktop/C++/my_project/function_1.h">
-			<Option target="MyProject"/>
-		</Unit>
-		<Unit filename="C:/Users/User/Desktop/C++/my_project/function_10.cpp">
-			<Option target="MyProject"/>
-		</Unit>
-		<Unit filename="C:/Users/User/Desktop/C++/my_project/function_10.h">
-			<Option target="MyProject"/>
-		</Unit>
-		<Unit filename="C:/Users/User/Desktop/C++/my_project/function_2.cpp">
-			<Option target="MyProject"/>
-		</Unit>
-		<Unit filename="C:/Users/User/Desktop/C++/my_project/function_2.h">
-			<Option target="MyProject"/>
-		</Unit>
-		<Unit filename="C:/Users/User/Desktop/C++/my_project/function_3.cpp">
-			<Option target="MyProject"/>
-		</Unit>
-		<Unit filename="C:/Users/User/Desktop/C++/my_project/function_3.h">
-			<Option target="MyProject"/>
-		</Unit>
-		<Unit filename="C:/Users/User/Desktop/C++/my_project/function_4&apos;.cpp">
-			<Option target="MyProject"/>
-		</Unit>
-		<Unit filename="C:/Users/User/Desktop/C++/my_project/function_4.h">
-			<Option target="MyProject"/>
-		</Unit>
-		<Unit filename="C:/Users/User/Desktop/C++/my_project/function_5.cpp">
-			<Option target="MyProject"/>
-		</Unit>
-		<Unit filename="C:/Users/User/Desktop/C++/my_project/function_5.h">
-			<Option target="MyProject"/>
-		</Unit>
-		<Unit filename="C:/Users/User/Desktop/C++/my_project/function_6.cpp">
-			<Option target="MyProject"/>
-		</Unit>
-		<Unit filename="C:/Users/User/Desktop/C++/my_project/function_6.h">
-			<Option target="MyProject"/>
-		</Unit>
-		<Unit filename="C:/Users/User/Desktop/C++/my_project/function_7.cpp">
-			<Option target="MyProject"/>
-		</Unit>
-		<Unit filename="C:/Users/User/Desktop/C++/my_project/function_7.h">
-			<Option target="MyProject"/>
-		</Unit>
-		<Unit filename="C:/Users/User/Desktop/C++/my_project/function_8.cpp">
-			<Option target="MyProject"/>
-		</Unit>
-		<Unit filename="C:/Users/User/Desktop/C++/my_project/function_8.h">
-			<Option target="MyProject"/>
-		</Unit>
-		<Unit filename="C:/Users/User/Desktop/C++/my_project/function_9.cpp">
-			<Option target="MyProject"/>
-		</Unit>
-		<Unit filename="C:/Users/User/Desktop/C++/my_project/function_9.h">
-			<Option target="MyProject"/>
-		</Unit>
 		<Unit filename="C:/Users/User/Desktop/C++/my_project/main.cpp">
 			<Option target="MyProject"/>
 		</Unit>
