@@ -1,26 +1,35 @@
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 
-void NOD(int a, int b) {
-    if (a > b) {
-        a -= b;
-    }
-    else {
-        b -= a;
-    }
-    if(b == 0) {
-        std::cout << a;
+void multiplication() {
+    int num1, num2, answer;
+
+    num1 = rand() % 10 + 1;
+    num2 = rand() % 10 + 1;
+
+    std::cout << num1 << " * " << num2 << " = ";
+    std::cin >> answer;
+    if (answer == -1) {
         return;
     }
+    else if(num1 * num2 == answer) {
+        std::cout << "Yes!" << std::endl;
+        multiplication();
+    }
+    else {
+        std::cout << "Please try again" << std::endl;
+        multiplication();
+    }
 
-    NOD(a, b);
 }
 
 int main() {
 
-    int num1, num2;
-    std::cin >> num1 >> num2;
-    NOD(num1, num2);
 
-    
+    srand(time(NULL));
+
+    multiplication();
+
     return 0;
 }
