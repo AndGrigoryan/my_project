@@ -2,20 +2,16 @@
 
 int main() {
 
-    int a, b, range_length = 0;
-    double average = 0.0;
+    int a, b, c;
 
-    std::cin >> a >> b;
+    std::cin >> a >> b >> c;
 
-    range_length = b- a + 1;
-
-    for(; a <= b; a++) {
-        average += a;
+    if( (a + b > c) || (a + c > b) || (b + c > a) ) {
+        std::cout << "Yes!" << std::endl;
     }
-
-    average /= range_length;
-
-    std::cout << "The arithmetic average: " << average;
+    else {
+        std::cout << "No!" << std::endl;
+    }
 
     return 0;
 }
