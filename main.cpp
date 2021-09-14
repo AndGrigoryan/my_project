@@ -21,5 +21,6 @@ int main() {
     std::cin >> num1 >> num2;
     NOD(num1, num2);
 
+    
     return 0;
 }
