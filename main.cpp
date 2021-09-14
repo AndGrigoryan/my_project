@@ -1,35 +1,21 @@
 #include <iostream>
-#include <cstdlib>
-#include <ctime>
-
-void multiplication() {
-    int num1, num2, answer;
-
-    num1 = rand() % 10 + 1;
-    num2 = rand() % 10 + 1;
-
-    std::cout << num1 << " * " << num2 << " = ";
-    std::cin >> answer;
-    if (answer == -1) {
-        return;
-    }
-    else if(num1 * num2 == answer) {
-        std::cout << "Yes!" << std::endl;
-        multiplication();
-    }
-    else {
-        std::cout << "Please try again" << std::endl;
-        multiplication();
-    }
-
-}
 
 int main() {
 
+    int a, b, range_length = 0;
+    double average = 0.0;
 
-    srand(time(NULL));
+    std::cin >> a >> b;
 
-    multiplication();
+    range_length = b- a + 1;
+
+    for(; a <= b; a++) {
+        average += a;
+    }
+
+    average /= range_length;
+
+    std::cout << "The arithmetic average: " << average;
 
     return 0;
 }
