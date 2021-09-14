@@ -2,31 +2,32 @@
 
 int main() {
 
-    int num1;
-    bool b = true;
-    std::cin >> num1;
+    int num1, num2;
+    char operation;
+    bool power = true;
 
-    for(int i = 1; i <= 9; i++) {
+    while( power  ) {
+        std::cin >> num1 >> operation >> num2;
 
-        int copy_num1 = num1 * 10 + i;
-        int temp = copy_num1;
-        int num2 = 0;
-
-        while(temp != 0) {
-            num2 = num2 * 10 + temp % 10;
-            temp /= 10;
+        switch (operation) {
+            case '+':
+                std::cout << num1 << " + " << num2 << " = " << num1 + num2 << std::endl;
+                break;
+            case '-':
+                    std::cout << num1 << " - " << num2 << " = " << num1 - num2 << std::endl;
+                    break;
+            case '*':
+                    std::cout << num1 << " * " << num2 << " = " << num1 * num2 << std::endl;
+                    break;
+            case '/':
+                    std::cout << num1 << " / " << num2 << " = " << num1 / num2 << std::endl;
+                    break;
+            default :
+                std::cout << "Invalid symbol";
+                break;
         }
-
-        if(copy_num1 == num2) {
-            std::cout << "Yes!" << " i = " << i << std::endl;
-            b = false;
-            break;
-        }
-
-    }
-
-    if( b == true) {
-        std::cout << "No!" << std::endl;
+        std::cout << "If you want to count a number again, write 1, otherwise write 0:";
+        std::cin >> power;
     }
 
     return 0;
