@@ -1,61 +1,72 @@
 #include "iostream"
-#include "vector"
 
-class House  {
-    public: char address[35] = "... ...";
-    int number_of_windows = 12;
-    int number_of_doors = 2;
-    std::string door1 = "Closed";
-    std::string door2 = "Closed";
-    std::string security = "Off";
+const int length = 5;
 
-    std::string open_close_door()  {
-        std::string door;
-        std::cin >> door;
-        if (door == "open") {
-            door = "Opened";
-        }
-        else {
-             door = "closed";
-        }
-        return door;
-    }
+struct Dog{
+    char eye_color[6];
+    int height;
+    int age = 2;
+};
 
-    std::string on_off_security() {
-        std::string security;
-        std::cin >> security;
-        return security;
-    }
+struct Computer {
+    char system[15] = "Windows 10";
+    int cpu_core_count;
+    int ram;
+};
 
-    void print_class_home() {
-        std::cout << "Address: " << address << std::endl;
-        std::cout << "Number of windows " << number_of_windows << std::endl;
-        std::cout << "Number or doors " << number_of_doors << std::endl;
-        std::cout << "Door 1: " << door1 << std::endl;
-        std::cout << "Door 2: " << door2 << std::endl;
-        std::cout << "Security(off/on) " << security << std::endl;
-    }
+struct User {
+    int age ;
+    char name[20] = "User";
+    Dog lynda;
+    Computer laptop;
 
 };
 
+struct House {
+
+    int length = 10;
+    int width;
+    User u[];
+
+};
+
+void print_data(User u) {
+
+    std::cout << std::endl << "User age: " << u.age;
+    std::cout << std::endl << "User name: " << u.name;
+
+    std::cout << std::endl << "User dog height: " << u.lynda.height;
+    std::cout << std::endl << "User dog eye color: " << u.lynda.eye_color;
+
+    std::cout << std::endl << "User laptop system: " << u.laptop.system;
+    std::cout << std::endl << "User RAM: " << u.laptop.ram;
+    std::cout << std::endl << "User laptop cpu: " << u.laptop.cpu_core_count;
+}
+
 int main() {
 
-    House test;
+    User test;
 
-    std::cout << "Door1 " << test.door1 << std::endl;
-    test.door1 = test.open_close_door();
-    std::cout << "Door1 " << test.door1 << std::endl;
+    test.age = 21;
 
-    std::cout << "Door2 " << test.door2 << std::endl;
-    test.door2 = test.open_close_door();
-    std::cout << "Door2 " << test.door1 << std::endl;
+    test.lynda.height = 2;
 
-    std::cout << "Security: " << test.security << std::endl;
-    test.security = test.on_off_security();
-    std::cout << "Security: " << test.security << std::endl;
+    std::cin >> test.lynda.eye_color;
 
-    test.print_class_home();
+    test.laptop.cpu_core_count = 9;
+    test.laptop.ram = 16;
 
+    House user1_tun;
+
+
+
+    print_data(test);
+
+    user1_tun.u[0].laptop.ram = 21;
+    user1_tun.u[1].laptop.ram = 42;
+
+    std::cout << std::endl << "User1 laptop ram: " << user1_tun.u[0].laptop.ram;
+    std::cout << std::endl << "User1 laptop ram: " << user1_tun.u[1].laptop.ram;
 
     return 0;
 }
