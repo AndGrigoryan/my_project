@@ -1,33 +1,61 @@
-#include <iostream>
+#include "iostream"
+#include "vector"
 
-int main()
-{
-    const int arr_length = 4;
-    int arr[arr_length] = {1, 4, 2, 6};
+class House  {
+    public: char address[35] = "... ...";
+    int number_of_windows = 12;
+    int number_of_doors = 2;
+    std::string door1 = "Closed";
+    std::string door2 = "Closed";
+    std::string security = "Off";
 
-   int start = 0, min, min_pos;
-
-   while (start != arr_length - 1) {
-       min = arr[start];
-       min_pos = start;
-
-       for (int i = start; i < arr_length; ++i) {
-           if (arr[i] < min) {
-               min = arr[i];
-               min_pos = i;
-           }
-       }
-       if(min_pos != start) {
-           int temp = arr[start];
-           arr[start] = arr[min_pos];
-           arr[min_pos] = temp;
-       }
-       start++;
-   }
-
-    for (int i = 0; i < arr_length; ++i) {
-        std::cout << arr[i] << ' ';
+    std::string open_close_door()  {
+        std::string door;
+        std::cin >> door;
+        if (door == "open") {
+            door = "Opened";
+        }
+        else {
+             door = "closed";
+        }
+        return door;
     }
+
+    std::string on_off_security() {
+        std::string security;
+        std::cin >> security;
+        return security;
+    }
+
+    void print_class_home() {
+        std::cout << "Address: " << address << std::endl;
+        std::cout << "Number of windows " << number_of_windows << std::endl;
+        std::cout << "Number or doors " << number_of_doors << std::endl;
+        std::cout << "Door 1: " << door1 << std::endl;
+        std::cout << "Door 2: " << door2 << std::endl;
+        std::cout << "Security(off/on) " << security << std::endl;
+    }
+
+};
+
+int main() {
+
+    House test;
+
+    std::cout << "Door1 " << test.door1 << std::endl;
+    test.door1 = test.open_close_door();
+    std::cout << "Door1 " << test.door1 << std::endl;
+
+    std::cout << "Door2 " << test.door2 << std::endl;
+    test.door2 = test.open_close_door();
+    std::cout << "Door2 " << test.door1 << std::endl;
+
+    std::cout << "Security: " << test.security << std::endl;
+    test.security = test.on_off_security();
+    std::cout << "Security: " << test.security << std::endl;
+
+    test.print_class_home();
+
 
     return 0;
 }
