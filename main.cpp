@@ -1,15 +1,36 @@
-#include "user_struct.h"
-#include "show_struct.h"
+#include <iostream>
+
+class Animals {
+    public:
+        int age;
+        std::string type, place;
+
+        void voice(std::string u) {
+            std::cout << u;
+        }
+        void show_class() {
+            std::cout << "Age "   << age << std::endl;
+            std::cout << "Type "  << type << std::endl;
+            std::cout << "Place " << place << std::endl;
+        }
+
+};
 
 int main() {
 
-    User john;
-    john.age = 21;
-    john.height = 192;
-    john.bac.age = 3;
-    john.bac.height = 100;
+    Animals bac, piso;
 
-    show_struct(&john);
+    bac.age = 3;
+    bac.type = "Dog";
+    bac.place = "Europe";
+
+    bac.show_class();
+
+    piso.age = 1;
+    piso.type = "Cat";
+    piso.place = "Asia";
+
+    piso.show_class();
 
     return 0;
 }

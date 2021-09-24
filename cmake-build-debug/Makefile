@@ -152,30 +152,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-show_struct.obj: show_struct.cpp.obj
-.PHONY : show_struct.obj
-
-# target to build an object file
-show_struct.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/show_struct.cpp.obj
-.PHONY : show_struct.cpp.obj
-
-show_struct.i: show_struct.cpp.i
-.PHONY : show_struct.i
-
-# target to preprocess a source file
-show_struct.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/show_struct.cpp.i
-.PHONY : show_struct.cpp.i
-
-show_struct.s: show_struct.cpp.s
-.PHONY : show_struct.s
-
-# target to generate assembly for a file
-show_struct.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/show_struct.cpp.s
-.PHONY : show_struct.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -188,9 +164,6 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... show_struct.obj
-	@echo ... show_struct.i
-	@echo ... show_struct.s
 .PHONY : help
 
 
