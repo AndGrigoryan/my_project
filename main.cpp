@@ -1,36 +1,33 @@
 #include <iostream>
 
-class Animals {
-    public:
-        int age;
-        std::string type, place;
+int main()
+{
+    const int arr_length = 4;
+    int arr[arr_length] = {1, 4, 2, 6};
 
-        void voice(std::string u) {
-            std::cout << u;
+    int start = 0, min, min_pos;
+
+    while (start != arr_length - 1) {
+        min = arr[start];
+        min_pos = start;
+
+        for (int i = start; i < arr_length; ++i) {
+            if (arr[i] < min) {
+                min = arr[i];
+                min_pos = i;
+            }
         }
-        void show_class() {
-            std::cout << "Age "   << age << std::endl;
-            std::cout << "Type "  << type << std::endl;
-            std::cout << "Place " << place << std::endl;
+        if(min_pos != start) {
+            int temp = arr[start];
+            arr[start] = arr[min_pos];
+            arr[min_pos] = temp;
         }
+        start++;
+    }
 
-};
-
-int main() {
-
-    Animals bac, piso;
-
-    bac.age = 3;
-    bac.type = "Dog";
-    bac.place = "Europe";
-
-    bac.show_class();
-
-    piso.age = 1;
-    piso.type = "Cat";
-    piso.place = "Asia";
-
-    piso.show_class();
+    for (int i = 0; i < arr_length; ++i) {
+        std::cout << arr[i] << ' ';
+    }
 
     return 0;
 }
