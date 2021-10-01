@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?> <!-- This line indicates that the document is really in XML format, its version and encoding is indicated                                                which is used in this document. -->
+<root>
+    <!-- Comment -->
+    <books>
+        <book pages ="246" price = "548.00">
+            <title>Qaj Nazar</title>
+            <author>Hovhannes Tumanyan</author>
+        </book>
+        <book pages ="186" price = "382.00">
+            <title>Anlreli zangakatun</title>
+            <author>Paruyr Sevak</author>
+        </book>
+        <book></book>
+        <book />
+    </books>
+</root>

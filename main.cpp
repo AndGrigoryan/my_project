@@ -1,32 +1,13 @@
 #include <iostream>
 
-int main()
-{
-    const int arr_length = 4;
-    int arr[arr_length] = {1, 4, 2, 6};
+int main() {
+    int n = 4;
+    char c[n];
 
-    int start = 0, min, min_pos;
+    std::cin >> c;
 
-    while (start != arr_length - 1) {
-        min = arr[start];
-        min_pos = start;
-
-        for (int i = start; i < arr_length; ++i) {
-            if (arr[i] < min) {
-                min = arr[i];
-                min_pos = i;
-            }
-        }
-        if(min_pos != start) {
-            int temp = arr[start];
-            arr[start] = arr[min_pos];
-            arr[min_pos] = temp;
-        }
-        start++;
-    }
-
-    for (int i = 0; i < arr_length; ++i) {
-        std::cout << arr[i] << ' ';
+    if (c[sizeof(c) - 1] == "\0" ) {
+        std::cout << '+';
     }
 
     return 0;

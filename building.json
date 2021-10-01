@@ -1,0 +1,30 @@
+{
+  "GITC": {
+        "address": {
+          "city": "Gyumri",
+          "streetAddress": "Gayi Street",
+          "postalCode": "3105"
+        },
+        "phoneNumbers": [
+          "055 135558",
+          "094 034034"
+        ],
+        "WebSite": "www.gitc.am/",
+        "Email": "info@gitc.am",
+        "Open from": "09։00 to 19:00",
+        "Number of floors": "4",
+        "Number of rooms": "4",
+        "room1": {
+          "Number of computers": "16",
+          "Number of tables and chairs": "16",
+          "Number of printers": "0",
+          "Number of projectors": "1"
+        },
+      "room2": {
+        "Number of computers": "4",
+        "Number of tables and chairs": "6",
+        "Number of printers": "4",
+        "Number of projectors": "2"
+      }
+  }
+}
