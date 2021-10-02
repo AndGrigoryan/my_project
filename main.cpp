@@ -2,7 +2,7 @@
 
 int main() {
 
-    
+
     User user1;
 
     user1.name = "Carl";
