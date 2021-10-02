@@ -85,6 +85,15 @@
 		<Unit filename="C:/Users/User/Desktop/C++/my_project/main.cpp">
 			<Option target="MyProject"/>
 		</Unit>
+		<Unit filename="C:/Users/User/Desktop/C++/my_project/show_struct.cpp">
+			<Option target="MyProject"/>
+		</Unit>
+		<Unit filename="C:/Users/User/Desktop/C++/my_project/show_struct.h">
+			<Option target="MyProject"/>
+		</Unit>
+		<Unit filename="C:/Users/User/Desktop/C++/my_project/struct.h">
+			<Option target="MyProject"/>
+		</Unit>
 		<Unit filename="C:/Users/User/Desktop/C++/my_project/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
