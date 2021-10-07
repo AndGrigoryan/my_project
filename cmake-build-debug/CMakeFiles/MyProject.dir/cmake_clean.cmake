@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/MyProject.dir/function.cpp.obj"
   "CMakeFiles/MyProject.dir/main.cpp.obj"
-  "CMakeFiles/MyProject.dir/show_struct.cpp.obj"
   "MyProject.exe"
   "MyProject.exe.manifest"
   "MyProject.pdb"

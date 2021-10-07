@@ -1,14 +1,7 @@
 #pragma once
-#include "iostream"
 
-struct Animal {
-    std::string name;
-    int age;
-};
+struct Interior {
 
-struct User {
-    std::string name;
-    std::string surname;
-    int age;
-    Animal dogs[2];
+    int number_of_tables, number_of_chairs, number_of_beds, number_of_sockets,  number_of_windows;
+
 };

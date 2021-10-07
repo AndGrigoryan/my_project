@@ -128,6 +128,30 @@ MyProject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/build
 .PHONY : MyProject/fast
 
+function.obj: function.cpp.obj
+.PHONY : function.obj
+
+# target to build an object file
+function.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/function.cpp.obj
+.PHONY : function.cpp.obj
+
+function.i: function.cpp.i
+.PHONY : function.i
+
+# target to preprocess a source file
+function.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/function.cpp.i
+.PHONY : function.cpp.i
+
+function.s: function.cpp.s
+.PHONY : function.s
+
+# target to generate assembly for a file
+function.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/function.cpp.s
+.PHONY : function.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -152,30 +176,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-show_struct.obj: show_struct.cpp.obj
-.PHONY : show_struct.obj
-
-# target to build an object file
-show_struct.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/show_struct.cpp.obj
-.PHONY : show_struct.cpp.obj
-
-show_struct.i: show_struct.cpp.i
-.PHONY : show_struct.i
-
-# target to preprocess a source file
-show_struct.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/show_struct.cpp.i
-.PHONY : show_struct.cpp.i
-
-show_struct.s: show_struct.cpp.s
-.PHONY : show_struct.s
-
-# target to generate assembly for a file
-show_struct.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/show_struct.cpp.s
-.PHONY : show_struct.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -185,12 +185,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... MyProject
+	@echo ... function.obj
+	@echo ... function.i
+	@echo ... function.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... show_struct.obj
-	@echo ... show_struct.i
-	@echo ... show_struct.s
 .PHONY : help
 
 
