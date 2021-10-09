@@ -128,30 +128,6 @@ MyProject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/build
 .PHONY : MyProject/fast
 
-function.obj: function.cpp.obj
-.PHONY : function.obj
-
-# target to build an object file
-function.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/function.cpp.obj
-.PHONY : function.cpp.obj
-
-function.i: function.cpp.i
-.PHONY : function.i
-
-# target to preprocess a source file
-function.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/function.cpp.i
-.PHONY : function.cpp.i
-
-function.s: function.cpp.s
-.PHONY : function.s
-
-# target to generate assembly for a file
-function.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/function.cpp.s
-.PHONY : function.cpp.s
-
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -185,9 +161,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... MyProject
-	@echo ... function.obj
-	@echo ... function.i
-	@echo ... function.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -6,19 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/User/Desktop/C++/my_project/class.h
-struct.h
-C:/Users/User/Desktop/C++/my_project/struct.h
-
-C:/Users/User/Desktop/C++/my_project/function.cpp
+C:/Users/User/Desktop/C++/my_project/main.cpp
 iostream
 C:/Users/User/Desktop/C++/my_project/iostream
-function.h
-C:/Users/User/Desktop/C++/my_project/function.h
-
-C:/Users/User/Desktop/C++/my_project/function.h
-class.h
-C:/Users/User/Desktop/C++/my_project/class.h
-
-C:/Users/User/Desktop/C++/my_project/struct.h
 

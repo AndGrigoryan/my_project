@@ -1,26 +1,75 @@
 #include "iostream"
-#include "struct.h"
-#include "function.h"
-#include "class.h"
+
+class Test {
+    int esim = 0;
+
+    int get_esim(){
+        return this -> esim;
+    }
+
+protected:
+    void print_data() {
+        std::cout << "Data" << std::endl;
+    }
+
+public:
+    void print_ok(int a, int b){
+        if(b % 2 == 0) {
+            this -> esim = b;
+        }
+        else {
+            this -> esim = b - 1;
+        }
+        for( ; a <= b; a++) {
+            if( a != esim ) {
+                std::cout << a * a << " ";
+            }
+
+        }
+    }
+
+    void print_esim() {
+        std::cout << "\nEsim = " << get_esim() << std::endl;
+    }
+
+
+};
+
+class User : public Test{
+    int age;
+    int name;
+
+    int get_age() {
+        return this -> age;
+    }
+
+protected:
+    void print_data() {
+        std::cout << "Data" << std::endl;
+    }
+
+public:
+    User(int a) {
+        this -> age = a;
+    }
+
+    void print_age() {
+        std::cout << "Age: " << get_age() << std::endl;
+        print_data();
+    }
+
+    ~User() {
+        std::cout << "\nobject User deleted\n" << std::endl;
+    }
+};
 
 int main() {
 
-    std::string room = " ";
+    User user1(21);
 
-    Building bedroom(1, 3, 2, 3, "blue", 1);       // Created an object named bedroom
-    Building living_room(2, 7, 0, 3, "white", 2);  // Created an object named living_room
-    bedroom.select_width_length(4, 5);
-    living_room.select_width_length(5, 7);
+    user1.print_ok(5, 9);
 
-    std::cout << "Please choose a room: (bedroom or living_room) " << std::endl;
-    std::cin >> room;
-
-    if(room == "bedroom") {
-        working_with_the_class(&bedroom);
-    }
-    else if (room == "living_room") {
-        working_with_the_class(&living_room);
-    }
+    user1.print_esim();
 
     return 0;
 }

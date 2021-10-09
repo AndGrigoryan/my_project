@@ -82,19 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/User/Desktop/C++/my_project/class.h">
-			<Option target="MyProject"/>
-		</Unit>
-		<Unit filename="C:/Users/User/Desktop/C++/my_project/function.cpp">
-			<Option target="MyProject"/>
-		</Unit>
-		<Unit filename="C:/Users/User/Desktop/C++/my_project/function.h">
-			<Option target="MyProject"/>
-		</Unit>
 		<Unit filename="C:/Users/User/Desktop/C++/my_project/main.cpp">
-			<Option target="MyProject"/>
-		</Unit>
-		<Unit filename="C:/Users/User/Desktop/C++/my_project/struct.h">
 			<Option target="MyProject"/>
 		</Unit>
 		<Unit filename="C:/Users/User/Desktop/C++/my_project/CMakeLists.txt">
