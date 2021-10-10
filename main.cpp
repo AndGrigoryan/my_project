@@ -24,8 +24,8 @@ public:
             if( a != esim ) {
                 std::cout << a * a << " ";
             }
-
         }
+        this -> esim = esim * esim;
     }
 
     void print_esim() {
