@@ -1,75 +1,84 @@
 #include "iostream"
 
-class Test {
-    int esim = 0;
+class Human {
+    int height;
+    std::string surname;
 
-    int get_esim(){
-        return this -> esim;
+    std::string get_surname() {
+        return this -> surname;
     }
 
 protected:
-    void print_data() {
-        std::cout << "Data" << std::endl;
+
+    void print_surname() {
+        std::cout << "Human surname: " << this -> get_surname() << std::endl;
+    }
+
+    int get_height() {
+        return this -> height;
     }
 
 public:
-    void print_ok(int a, int b){
-        if(b % 2 == 0) {
-            this -> esim = b;
-        }
-        else {
-            this -> esim = b - 1;
-        }
-        for( ; a <= b; a++) {
-            if( a != esim ) {
-                std::cout << a * a << " ";
-            }
 
-        }
+    Human(int h, std::string s) {
+    this -> height = h;
+    this -> surname = s;
     }
 
-    void print_esim() {
-        std::cout << "\nEsim = " << get_esim() << std::endl;
+    ~Human() {
+        std::cout << "Delete object Human" << std::endl;
     }
 
+    void set(int h) {
+        this -> height = h;
+    }
+    void set(std::string s) {
+        this -> surname = s;
+    }
 
 };
 
-class User : public Test{
-    int age;
-    int name;
+class User : public Human {
+    std::string name;
 
-    int get_age() {
-        return this -> age;
-    }
-
-protected:
-    void print_data() {
-        std::cout << "Data" << std::endl;
+    std::string get_name() {
+        return this -> name;
     }
 
 public:
-    User(int a) {
+    int age;
+
+    User(std::string n, int a, int h, std::string s) : Human(h, s) {
+
+        this -> name = n;
         this -> age = a;
+
     }
 
-    void print_age() {
-        std::cout << "Age: " << get_age() << std::endl;
-        print_data();
+    void print_name() {
+        std::cout << "User name: " << get_name() << std::endl;
     }
 
     ~User() {
-        std::cout << "\nobject User deleted\n" << std::endl;
+        print_name();
+        print_surname();
     }
+
+    void print_height_human() {
+        std::cout << "Human height: " << get_height() <<std::endl;
+    }
+
 };
 
 int main() {
 
-    User user1(21);
+    User cj("Carl", 34, 166, "Robinson");
 
-    user1.print_ok(5, 9);
+    cj.set(199);
 
-    user1.print_esim();
+    cj.set("Johnson");
+
+    cj.print_height_human();
 
     return 0;
 }
