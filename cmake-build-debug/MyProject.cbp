@@ -85,6 +85,12 @@
 		<Unit filename="C:/Users/User/Desktop/C++/my_project/main.cpp">
 			<Option target="MyProject"/>
 		</Unit>
+		<Unit filename="C:/Users/User/Desktop/C++/my_project/test.cpp">
+			<Option target="MyProject"/>
+		</Unit>
+		<Unit filename="C:/Users/User/Desktop/C++/my_project/test.h">
+			<Option target="MyProject"/>
+		</Unit>
 		<Unit filename="C:/Users/User/Desktop/C++/my_project/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

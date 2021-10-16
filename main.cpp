@@ -1,24 +1,12 @@
-#include <iostream>
-
-enum cardinal_dirctions {
-    north = 25,
-    south,
-    east,
-    west
-};
+#include "iostream"
+#include "test.h"
 
 int main() {
 
-    std::cout << "Displaying directions and their symbolic values" << std::endl;
+    char language[2];
+    std::cin >> language;
 
-    std::cout << "North: " << north << std::endl;
-    std::cout << "South:  " << south << std::endl;
-    std::cout << "East:  " << east << std::endl;
-    std::cout << "West: " << west << std::endl;
-
-    cardinal_dirctions wind_directions = south;
-
-    std::cout << "Variable wind_direction = " << wind_directions << std::endl;
+     test( (int)language[0] + (int)language[1] );
 
     return 0;
 }
