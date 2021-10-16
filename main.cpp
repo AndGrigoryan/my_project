@@ -1,22 +1,48 @@
 #include <iostream>
 
-void rec(int f_row, std::string num_sp) {
-    if(f_row > 0) {
-        std::cout << num_sp;
-        for (int j = 0; j < f_row; j++) {
-            std::cout << "* ";
-        }
-        std::cout << std::endl;
-        num_sp += " ";
-        rec(f_row - 1, num_sp);
-    }
+class Number {
+        private:
+            int m_number;
+        public:
+    
+            Number(int number=0)
+            : m_number(number) {
+
+            }
+
+            Number& operator++();
+            Number& operator--();
+
+            friend std::ostream& operator<< (std::ostream &out, const Number &n);
+        };
+
+Number& Number::operator++() {
+
+   --m_number;
+
+    return *this;
+}
+
+Number& Number::operator--() {
+    ++m_number;
+
+    return *this;
+}
+
+std::ostream& operator<< (std::ostream &out, const Number &n) {
+    out << n.m_number;
+    return out;
 }
 
 int main() {
 
-    int first_row = 4;
-    std::string number_spaces = "";
+    Number number(7);
 
-    rec(first_row, number_spaces);
+    std::cout <<   number << std::endl;
+    std::cout << ++number << std::endl;
+    std::cout << ++number << std::endl;
+    std::cout << --number << std::endl;
+    std::cout << --number << std::endl;
+
     return 0;
 }
