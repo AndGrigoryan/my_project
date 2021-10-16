@@ -1,12 +1,17 @@
-#include "iostream"
-#include "test.h"
+#include <iostream>
 
 int main() {
 
-    char language[2];
-    std::cin >> language;
-
-     test( (int)language[0] + (int)language[1] );
+    int first_row = 4;
+    std::string g = "";
+    for (int i = first_row; i > 0; i--) {
+        std::cout << g;
+        for (int j = 0; j < i; j++) {
+            std::cout << "* ";
+        }
+        std::cout << std::endl;
+        g += " ";
+    }
 
     return 0;
 }
