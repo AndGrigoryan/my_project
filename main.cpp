@@ -8,7 +8,10 @@ int main() {
     std::string test = "design";
     int i = text.find(test);
 
-    std::cout << i << "  <<------>>  " << i - 1 + test.length();
+    if(std::string::npos != i) {
+        std::cout << i << "  <<------>>  " << i - 1 + test.length();
+    }
+
 
 
     return 0;
