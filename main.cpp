@@ -10,6 +10,8 @@ int main() {
 
     if(std::string::npos != i) {
         std::cout << i << "  <<------>>  " << i - 1 + test.length();
+    } else {
+        std::cout << "ERROR: Word not found" << "\n";
     }
 
 
