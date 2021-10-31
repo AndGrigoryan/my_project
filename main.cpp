@@ -23,7 +23,7 @@ int main() {
 
     Animal dog(12, "Bac");
 
-    dog.print_hello();
+    Animal::print_hello();
 
     return 0;
 }
