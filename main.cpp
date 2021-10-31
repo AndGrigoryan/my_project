@@ -1,6 +1,6 @@
 #include <iostream>
 
-class animal {
+class Animal {
     int age;
     std::string name;
 
@@ -10,18 +10,18 @@ public:
         std::cout << "Hello" << "\n";
     }
 
-    animal(int a, std::string n) {
+    Animal(int a, std::string n) {
         this -> name = n;
         this -> age = a;
     }
-    ~animal(){
+    ~Animal(){
         std::cout << "Name: " << this -> name << "\n" << "Age: " << this -> age << "\n";
     }
 };
 
 int main() {
 
-    animal dog(12, "Bac");
+    Animal dog(12, "Bac");
 
     dog.print_hello();
 
