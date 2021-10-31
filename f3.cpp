@@ -1,4 +1,6 @@
-//
-// Created by User on 31.10.2021.
-//
+#include "f3.h"
+
+int multiple(int a, int b) {
+    return a * b;
+}
 
