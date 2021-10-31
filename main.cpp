@@ -1,37 +1,19 @@
 #include <iostream>
-#include "string"
-
-std::string solver (std::string text) {
-    if (text.size() <= 2) {
-        return "No";
-    }
-    int cnt = 0;
-    char t = 0;
-    for (int i = 0; i <= text.size() / 2; i++) {
-        if ( text[i] != text[text.size() - i - 1]) {
-            return "No";
-        }
-        if (text[i] != t) {
-            cnt++;
-            t = text[i];
-        }
-        if ( cnt > 2) {
-            return "No";
-        }
-    }
-    if (cnt <= 1) {
-        return "No!";
-    }
-    return "Yes";
-}
+#include "f1.h"
+#include "f2.h"
+#include "f3.h"
+#include "f4.h"
 
 int main() {
 
-    std::string text;
+    int num1, num2;
 
-    std::cin >> text;
+    std::cin >> num1 >> num2;
 
-    std::cout << solver(text) << std::endl;
+    std::cout << " num1 + num2 = " << sum(num1, num2) << std::endl;
+    std::cout << " num1 - num2 = " << sub(num1, num2) << std::endl;
+    std::cout << " num1 * num2 = " << multiple(num1, num2) << std::endl;
+    std::cout << " num1 / num2 = " << division(num1, num2) << std::endl;
 
     return 0;
 }

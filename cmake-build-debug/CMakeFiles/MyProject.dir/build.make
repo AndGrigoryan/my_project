@@ -78,19 +78,79 @@ CMakeFiles/MyProject.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/main.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\User\Desktop\C++\my_project\main.cpp -o CMakeFiles\MyProject.dir\main.cpp.s
 
+CMakeFiles/MyProject.dir/f1.cpp.obj: CMakeFiles/MyProject.dir/flags.make
+CMakeFiles/MyProject.dir/f1.cpp.obj: ../f1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User\Desktop\C++\my_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyProject.dir/f1.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MyProject.dir\f1.cpp.obj -c C:\Users\User\Desktop\C++\my_project\f1.cpp
+
+CMakeFiles/MyProject.dir/f1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/f1.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\Desktop\C++\my_project\f1.cpp > CMakeFiles\MyProject.dir\f1.cpp.i
+
+CMakeFiles/MyProject.dir/f1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/f1.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\User\Desktop\C++\my_project\f1.cpp -o CMakeFiles\MyProject.dir\f1.cpp.s
+
+CMakeFiles/MyProject.dir/f2.cpp.obj: CMakeFiles/MyProject.dir/flags.make
+CMakeFiles/MyProject.dir/f2.cpp.obj: ../f2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User\Desktop\C++\my_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyProject.dir/f2.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MyProject.dir\f2.cpp.obj -c C:\Users\User\Desktop\C++\my_project\f2.cpp
+
+CMakeFiles/MyProject.dir/f2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/f2.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\Desktop\C++\my_project\f2.cpp > CMakeFiles\MyProject.dir\f2.cpp.i
+
+CMakeFiles/MyProject.dir/f2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/f2.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\User\Desktop\C++\my_project\f2.cpp -o CMakeFiles\MyProject.dir\f2.cpp.s
+
+CMakeFiles/MyProject.dir/f3.cpp.obj: CMakeFiles/MyProject.dir/flags.make
+CMakeFiles/MyProject.dir/f3.cpp.obj: ../f3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User\Desktop\C++\my_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MyProject.dir/f3.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MyProject.dir\f3.cpp.obj -c C:\Users\User\Desktop\C++\my_project\f3.cpp
+
+CMakeFiles/MyProject.dir/f3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/f3.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\Desktop\C++\my_project\f3.cpp > CMakeFiles\MyProject.dir\f3.cpp.i
+
+CMakeFiles/MyProject.dir/f3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/f3.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\User\Desktop\C++\my_project\f3.cpp -o CMakeFiles\MyProject.dir\f3.cpp.s
+
+CMakeFiles/MyProject.dir/f4.cpp.obj: CMakeFiles/MyProject.dir/flags.make
+CMakeFiles/MyProject.dir/f4.cpp.obj: ../f4.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\User\Desktop\C++\my_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MyProject.dir/f4.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MyProject.dir\f4.cpp.obj -c C:\Users\User\Desktop\C++\my_project\f4.cpp
+
+CMakeFiles/MyProject.dir/f4.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/f4.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\User\Desktop\C++\my_project\f4.cpp > CMakeFiles\MyProject.dir\f4.cpp.i
+
+CMakeFiles/MyProject.dir/f4.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/f4.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\User\Desktop\C++\my_project\f4.cpp -o CMakeFiles\MyProject.dir\f4.cpp.s
+
 # Object files for target MyProject
 MyProject_OBJECTS = \
-"CMakeFiles/MyProject.dir/main.cpp.obj"
+"CMakeFiles/MyProject.dir/main.cpp.obj" \
+"CMakeFiles/MyProject.dir/f1.cpp.obj" \
+"CMakeFiles/MyProject.dir/f2.cpp.obj" \
+"CMakeFiles/MyProject.dir/f3.cpp.obj" \
+"CMakeFiles/MyProject.dir/f4.cpp.obj"
 
 # External object files for target MyProject
 MyProject_EXTERNAL_OBJECTS =
 
 MyProject.exe: CMakeFiles/MyProject.dir/main.cpp.obj
+MyProject.exe: CMakeFiles/MyProject.dir/f1.cpp.obj
+MyProject.exe: CMakeFiles/MyProject.dir/f2.cpp.obj
+MyProject.exe: CMakeFiles/MyProject.dir/f3.cpp.obj
+MyProject.exe: CMakeFiles/MyProject.dir/f4.cpp.obj
 MyProject.exe: CMakeFiles/MyProject.dir/build.make
 MyProject.exe: CMakeFiles/MyProject.dir/linklibs.rsp
 MyProject.exe: CMakeFiles/MyProject.dir/objects1.rsp
 MyProject.exe: CMakeFiles/MyProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\User\Desktop\C++\my_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable MyProject.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\User\Desktop\C++\my_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable MyProject.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\MyProject.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
