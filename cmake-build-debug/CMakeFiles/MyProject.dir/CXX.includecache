@@ -6,39 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/User/Desktop/C++/my_project/f1.cpp
-f1.h
-C:/Users/User/Desktop/C++/my_project/f1.h
-
-C:/Users/User/Desktop/C++/my_project/f1.h
-
-C:/Users/User/Desktop/C++/my_project/f2.cpp
-f2.h
-C:/Users/User/Desktop/C++/my_project/f2.h
-
-C:/Users/User/Desktop/C++/my_project/f2.h
-
-C:/Users/User/Desktop/C++/my_project/f3.cpp
-f3.h
-C:/Users/User/Desktop/C++/my_project/f3.h
-
-C:/Users/User/Desktop/C++/my_project/f3.h
-
-C:/Users/User/Desktop/C++/my_project/f4.cpp
-f4.h
-C:/Users/User/Desktop/C++/my_project/f4.h
-
-C:/Users/User/Desktop/C++/my_project/f4.h
-
 C:/Users/User/Desktop/C++/my_project/main.cpp
 iostream
 -
-f1.h
-C:/Users/User/Desktop/C++/my_project/f1.h
-f2.h
-C:/Users/User/Desktop/C++/my_project/f2.h
-f3.h
-C:/Users/User/Desktop/C++/my_project/f3.h
-f4.h
-C:/Users/User/Desktop/C++/my_project/f4.h
 

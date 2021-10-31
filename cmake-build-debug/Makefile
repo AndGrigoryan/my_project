@@ -128,102 +128,6 @@ MyProject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/build
 .PHONY : MyProject/fast
 
-f1.obj: f1.cpp.obj
-.PHONY : f1.obj
-
-# target to build an object file
-f1.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/f1.cpp.obj
-.PHONY : f1.cpp.obj
-
-f1.i: f1.cpp.i
-.PHONY : f1.i
-
-# target to preprocess a source file
-f1.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/f1.cpp.i
-.PHONY : f1.cpp.i
-
-f1.s: f1.cpp.s
-.PHONY : f1.s
-
-# target to generate assembly for a file
-f1.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/f1.cpp.s
-.PHONY : f1.cpp.s
-
-f2.obj: f2.cpp.obj
-.PHONY : f2.obj
-
-# target to build an object file
-f2.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/f2.cpp.obj
-.PHONY : f2.cpp.obj
-
-f2.i: f2.cpp.i
-.PHONY : f2.i
-
-# target to preprocess a source file
-f2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/f2.cpp.i
-.PHONY : f2.cpp.i
-
-f2.s: f2.cpp.s
-.PHONY : f2.s
-
-# target to generate assembly for a file
-f2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/f2.cpp.s
-.PHONY : f2.cpp.s
-
-f3.obj: f3.cpp.obj
-.PHONY : f3.obj
-
-# target to build an object file
-f3.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/f3.cpp.obj
-.PHONY : f3.cpp.obj
-
-f3.i: f3.cpp.i
-.PHONY : f3.i
-
-# target to preprocess a source file
-f3.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/f3.cpp.i
-.PHONY : f3.cpp.i
-
-f3.s: f3.cpp.s
-.PHONY : f3.s
-
-# target to generate assembly for a file
-f3.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/f3.cpp.s
-.PHONY : f3.cpp.s
-
-f4.obj: f4.cpp.obj
-.PHONY : f4.obj
-
-# target to build an object file
-f4.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/f4.cpp.obj
-.PHONY : f4.cpp.obj
-
-f4.i: f4.cpp.i
-.PHONY : f4.i
-
-# target to preprocess a source file
-f4.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/f4.cpp.i
-.PHONY : f4.cpp.i
-
-f4.s: f4.cpp.s
-.PHONY : f4.s
-
-# target to generate assembly for a file
-f4.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyProject.dir\build.make CMakeFiles/MyProject.dir/f4.cpp.s
-.PHONY : f4.cpp.s
-
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -257,18 +161,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... MyProject
-	@echo ... f1.obj
-	@echo ... f1.i
-	@echo ... f1.s
-	@echo ... f2.obj
-	@echo ... f2.i
-	@echo ... f2.s
-	@echo ... f3.obj
-	@echo ... f3.i
-	@echo ... f3.s
-	@echo ... f4.obj
-	@echo ... f4.i
-	@echo ... f4.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

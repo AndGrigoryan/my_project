@@ -1,8 +1,16 @@
 #include <iostream>
-#include "f1.h"
-#include "f2.h"
-#include "f3.h"
-#include "f4.h"
+
+void rec(int start, int end) {
+    if ( start <= end ) {
+        if (start % 2 == 0) {
+            std::cout << start << ' ';
+            start += 2;
+            rec(start, end);
+        } else {
+            rec(++start, end);
+        }
+    }
+}
 
 int main() {
 
@@ -10,10 +18,11 @@ int main() {
 
     std::cin >> num1 >> num2;
 
-    std::cout <<  num1  << " + " << num2 << " = " << sum(num1, num2) << std::endl;
-    std::cout <<  num1 <<  " - " <<  num2 << " = " << sub(num1, num2) << std::endl;
-    std::cout <<  num1 << " * " << num2 << " = " << multiple(num1, num2) << std::endl;
-    std::cout <<  num1 << " / " << num2 << " = " << division(num1, num2) << std::endl;
+    if(num1 < num2) {
+        rec(num1, num2);
+    } else {
+        rec(num2, num1);
+    }
 
     return 0;
 }
