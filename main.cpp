@@ -1,23 +1,47 @@
-#include <iostream>
-#include "string"
+#include "iostream"
 
-void fnd_text(std::string str, std::string f_str) {
-    int cnt = 0;
-    while (std::string::npos != str.find(f_str)) {
-        cnt++;
-        str.replace(str.find(f_str), f_str.size(), " ");
+void test (int *n1, int *n2, char *t) {
+
+    switch(*t) {
+        case '+':
+            std::cout << *n1 << " + " << *n2 << " = " << *n1 + *n2;
+            break;
+        case '-':
+            std::cout << *n1 << " - " << *n2 << " = " << *n1 - *n2;
+            break;
+        case '/':
+            std::cout << *n1 << " / " << *n2 << " = " << *n1 / *n2;
+            break;
+        case '*':
+            std::cout << *n1 << " * " << *n2 << " = " << *n1 * *n2;
+            break;
+        default:
+            std::cout << "Invalid symbol\n";
+            break;
     }
-    std::cout << cnt;
+
+}
+
+void init_params(int *n1, int *n2, char *t) {
+
+    std::cout << "num1:";
+    std::cin >> *n1 ;
+
+    std::cout << "num2:";
+    std::cin >> *n2;
+
+    std::cout << "Type:";
+    std::cin >> *t;
+
 }
 
 int main() {
+    int num1, num2;
+    char type;
 
-    std::string test = "Lorem Ipsum is simply dummy... Lorem Ipsum... Ipsum";
+    init_params(&num1, &num2, &type);
 
-    std::string text = "Ipsum";
-
-    fnd_text(test, text);
-
+    test(&num1, &num2, &type);
 
     return 0;
 }
